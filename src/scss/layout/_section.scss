@@ -1,0 +1,57 @@
+//Items section styles
+.items {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: var(--space-md);
+        color: var(--color-white);
+        width: 12%;
+        border-radius: var(--space-md);
+        margin: var(--space-md);
+        transition: 
+            box-shadow 0.15s ease-in-out,
+            background-color 0.15s ease-in-out,
+            transform 0.15s ease-in-out;
+
+        &:hover {
+            box-shadow: (0 0 3rem rgba(255, 255, 255, 0.08));
+            transform: translate3d(0, -1px, 0);
+            background-color: rgba(255, 255, 255, 0.046);
+        }
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        border-radius: var(--radius-sm);
+        padding: 1rem 0.25rem 1rem 0.25rem;
+        background: rgba(167, 156, 156, 0.386);
+    }
+}
+
+.bg__ovals {
+    display: flex;
+    position: absolute;
+    bottom: -15%;
+    left: 10%;
+    overflow: visible;
+    width: 100%;
+    height: 80%;
+    z-index: -2;
+
+    &__item-1 {
+        position: absolute;
+        bottom: 14%;
+        left: 50%;
+    }
+    &__item-2 {
+        position: absolute;
+        bottom: 14%;
+        left: 35%;
+    }
+}

@@ -1,0 +1,54 @@
+// Header styles
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--space-md) 0;
+
+    &__logo {
+        display: block;
+        width: 180px;
+        transition: transform 0.1s ease-in-out;
+
+        &:hover {
+            transform: translateY(-2px);
+        }
+    }
+}
+
+.nav-primary {
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: var(--space-xl);
+        margin-right: 10rem;
+    }
+    
+    
+    &__link {
+        display: inline-block;
+        margin: var(--space-sm) 0;
+        border-bottom: 1px solid transparent;
+        transition: 
+        border 0.1s ease-in-out,
+        color 0.1s ease-in-out,
+        transform 0.1s ease-in-out;
+        
+        &:hover {
+            border-bottom: 2px solid var(--color-text-2);
+            color: var(--color-white);
+            transform: translate3d(0, -1px, 0);
+        }
+        
+        &--active {
+            color: var(--color-white);
+            border-bottom: 2px solid var(--color-text-2);
+            transition: transform 0.1s ease-in-out;
+        
+            &:hover {
+                color: var(--color-text-2);
+                transform: translate3d(0, -2px, 0);
+            }
+        }
+    }
+}

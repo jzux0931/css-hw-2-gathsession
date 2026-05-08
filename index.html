@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:opsz@18..144&family=Poppins&display=swap" rel="stylesheet">
+    <title>CSS HW 2 - Header Gathsession</title>
+  </head>
+
+  <body>
+    <div class="landing-page">
+      <header class="header">
+        <a href="#" class="header__logo">
+          <img
+            src="/src/assets/icons/gathsession-icon.svg"
+            alt="Gathsession logo"
+          >
+        </a>
+
+        <nav class="nav-primary" aria-label="Primary navigation">
+          <ul class="nav-primary__list">
+            <li>
+              <a href="#" class="nav-primary__link nav-primary__link--active">
+                Home
+              </a>
+            </li>
+            <li><a href="#" class="nav-primary__link">Features</a></li>
+            <li><a href="#" class="nav-primary__link">Blog</a></li>
+            <li><a href="#" class="nav-primary__link">Contact</a></li>
+            <li><a href="#" class="nav-primary__link">About Us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main">
+        <section class="hero">
+          <div class="hero__content">
+            <h1 class="hero__title">Build your best community starting from here.</h1>
+
+            <p class="hero__text">
+              Meet and communicate with the best people to run projects, events
+              or other activities in a more effective and fun way
+            </p>
+
+            <div class="hero__actions">
+              <a class="hero__link-1" href="#">Get Started</a>
+
+              <a href="#" class="hero__link-2">
+                <span>Learn More</span>
+                <img src="/src/assets/icons/arrow-icon.svg" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__visual" aria-hidden="true">
+            <div class="hero__bento">
+              <div class="bento__item bento__item--photo-1">
+                <img src="/src/assets/img/orange-man.png" alt="">
+              </div>
+
+              <div class="bento__item bento__item--photo-2">
+                <img src="/src/assets/img/asian-girl.png" alt="">
+              </div>
+
+              <div class="bento__item bento__item--photo-3">
+                <img src="/src/assets/img/glasses-girl.png" alt="">
+              </div>
+
+              <div class="bento__item bento__item--photo-4">
+                <img src="/src/assets/img/glasses-man.png" alt="">
+              </div>
+
+              <div class="bento__item bento__item--photo-5">
+                <img src="/src/assets/img/sunglasses-woman.png" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="items" aria-label="Gathsession highlights">
+          <div class="items__item">
+            <div class="items__img">
+              <img src="/src/assets/icons/comments-icon.svg" alt="">
+            </div>
+            <strong class="items__text">Build Community</strong>
+          </div>
+
+          <div class="items__item">
+            <div class="items__img">
+              <img src="/src/assets/icons/events-icon.svg" alt="">
+            </div>
+            <strong class="items__text">Share Events</strong>
+          </div>
+
+          <div class="items__item">
+            <div class="items__img">
+              <img src="/src/assets/icons/info-icon.svg" alt="">
+            </div>
+            <strong class="items__text">Get Information</strong>
+          </div>
+        </section>
+
+        <div class="bg__ovals">
+          <div class="bg__ovals__item bg__ovals__item-1">
+            <img src="/src/assets/img/ellipse-1.png" alt="">
+          </div>
+
+          <div class="bg__ovals__item bg__ovals__item-2">
+            <img src="/src/assets/img/ellipse-2.png" alt="">
+          </div>
+        </div>
+
+      </main>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
